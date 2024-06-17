@@ -28,7 +28,6 @@ func init() {
 }
 
 func main() {
-
 	h := server.Default(
 		server.WithHostPorts("localhost:8888"),
 		server.WithMaxRequestBodySize(419430400),

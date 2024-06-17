@@ -78,7 +78,7 @@ services:
       MYSQL_ROOT_PASSWORD: 123456
       MYSQL_DATABASE: milvus
     volumes:
-      - /Users/sailschwarz/docker/mysql/data:/var/lib/mysql
+      - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/mysql:/var/lib/mysql
     ports:
       - "3306:3306"
 

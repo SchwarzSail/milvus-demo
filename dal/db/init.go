@@ -20,6 +20,9 @@ func InitMySQL() {
 	if err != nil {
 		panic(err)
 	}
-	_ = db.AutoMigrate(&Image{})
+	err = db.AutoMigrate(&Image{})
+	if err != nil {
+		panic(err)
+	}
 	DB = db
 }
