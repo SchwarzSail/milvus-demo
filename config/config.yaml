@@ -1,0 +1,14 @@
+minio:
+  bucketName: "image"
+  endpoint: "localhost:9000"
+
+
+milvus:
+  endpoint: "127.0.0.1:19530"
+
+
+mysql:
+  userName: "root"
+  password: "123456"
+  dbName: "milvus"
+  endpoint: "127.0.0.1:3306"
